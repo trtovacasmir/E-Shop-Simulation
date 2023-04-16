@@ -4,15 +4,10 @@ margin: 0;
 padding: 0;
 }
 
-body{
-    width: 100vw;
-    background-color: red;
-}
-
 header{
     width: 100%;
     height: 15vh;
-    background-color: #253237;
+    background-color: #2c3e50;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,13 +16,15 @@ header{
 }
 
 
-.nav{
+
+
+/* .nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 50%;
-}
+} */
 
 .nav_home{
     display: flex;
@@ -37,11 +34,33 @@ header{
     width: 80%;
 }
 
+.logo{
+    float: left;
+    width: 25%;
+}
+
+#logo{
+    font-size: 50px;
+    margin-left: 25px;
+    color: #ead9e6;
+    
+}
+
+h2{
+    width: 25%;
+    text-align: center;
+    margin-left: 170px;
+    color: #ead9e6;
+    text-align: center;
+}
+
+/*-------------------- BODY ------------------------       */
+
 body{
     min-height: calc(100vh - 30vh);
     width: 100%;
     height: 70vh;
-    background-color: #E0EDF5;
+    background-color: #ecf0f1;
 }
 
 .container{
@@ -61,30 +80,16 @@ footer{
     background-color: burlywood;
     
 }
-.logo{
-    float: left;
-    width: 25%;
-}
-h2{
-    width: 25%;
-    text-align: center;
-    margin-left: 170px;
-    color: #ead9e6;
-    text-align: center;
-}
 
-#logo{
-    font-size: 50px;
-    margin-left: 25px;
-    color: #ead9e6;
-    
-}
+
+
+
 
 .div_card{
    
     height: 300px;
     width: 300px;
-    background-color: #FFFFFF;
+    background-color: white;
     border: 1px solid #ccc;
     margin: 15px;
     text-align: center;
@@ -97,7 +102,7 @@ h2{
 
 .api_image{
     height: 120px;
-    width: 100px;
+    width: 120px;
     border-radius: 8px;
     margin-top: 8px;
 }
@@ -129,7 +134,7 @@ ul{
     
 };
 .p{
-    color: white;
+    color: #658994;
     background-color: white;
 }
 /*      -----    home page    -----       */
@@ -184,10 +189,13 @@ select{
 
 
 
-option{
-    color: black;
+select option{
+    color:#2c3e50;
     background-color: white;
 }
+select option:hover {
+    background-color: red;
+  }
 
 /*---------------------LOGIN----------------------------------*/
 .login_div{
@@ -202,14 +210,16 @@ option{
     align-items: center;
     flex-direction: column;
     border-radius: 30px;
+    border: 2px solid #2c3e50;
 }
 input{
     border-radius: 5px;
-    height: 1.7rem;
-    width: 12rem;
+    height: 1.8rem;
+    width: 13rem;
     margin: 10px;
     list-style: none;
-    border: 1px solid rebeccapurple;
+    border: 1.5px solid #2c3e50;
+    margin: 7px;
 }
 
 .signup{
@@ -217,9 +227,28 @@ input{
     color: rebeccapurple;
 }
 h1{
-    color:#b087a6 ;
+    color:#2c3e50;
 }
 
 @media (max-width:390) {
     
 }
+
+
+button.login {
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  small{
+    
+        color: #658994;
+    
+  }
