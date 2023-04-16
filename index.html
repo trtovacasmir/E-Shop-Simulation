@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<header>
+    <div class="logo"><i class="fa-brands fa-shopify" id="logo"></i></div>
+    <div class="nav_home"><ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html">About Us</a></li>
+        <li>
+            <select id="category" name="category">
+              <option value="" class="all_products" onclick="getProducts()"> All Products</option>
+              <option value="category/electronics">Electronics</option>
+              <option value="category/jewelery">Jewelery</option>
+              <option value="category/men's clothing">men's clothing</option>
+              <option value="category/women's clothing">women's clothing</option>
+            </select>
+        </li>
+
+        <li>
+            <select id="category1" name="category" class="sort">
+              <option value="" class="sort_by">Sort By</option>
+              <option value="electronics">cheap</option>
+              <option value="option2">expensive</option>
+            </select>
+        </li>
+        <li><a onclick="Logout()" class="logout" href="login.html">Log out</a></li>
+
+       
+    </ul></div>
+</header>  
+<body>
+     
+    
+    
+    <div class="container"></div>
+ 
+    
+    <script src="main.js"></script>
+</body>
+<footer></footer>
+
+</html>
