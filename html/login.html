@@ -8,17 +8,18 @@
 </head>
 <body>
     
-    <div class="login_div">
-        <h1>Log In Page</h1>
-        <input type="text" name="" id="username" placeholder=" Enter your Username">
-        <input type="password" name="" id="password" placeholder=" Enter your password">
+    <div class="login_card">
+        <div class="login_card_child">
+        <h1 class="login_title">Log In Page</h1>
+        <input type="text" name="" id="username" placeholder=" Type your Username">
+        <input type="password" name="" id="password" placeholder=" Type your password">
+        
+        <button onclick="Login()" class="login">Log In</button>
         <small>Don't have an account ? <a href="signup.html" class="signup">Sign Up</a></small>
-        <button onclick="Login()" class="login">login</button>
-       
-
-        <a href="home.html">Back home</a>
+       <a href="home.html">Back home</a>
 
         <button onclick="Logout()" class="logout">logout</button>
+        </div>
     </div>
 
     <script src="../js/login.js"></script>
