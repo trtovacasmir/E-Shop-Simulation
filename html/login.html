@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    <link rel="stylesheet" href="../style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
+<header>
+    <div class="logo"><i class="fa-brands fa-shopify" id="logo"></i></div>
+    <div class="nav_home"></div>
+</header>  
 <body>
     
     <div class="login_card">
@@ -16,10 +23,9 @@
         
         <button onclick="Login()" class="login">Log In</button>
         <small>Don't have an account ? <a href="signup.html" class="signup">Sign Up</a></small>
-       <a href="home.html">Back home</a>
-
         <button onclick="Logout()" class="logout">logout</button>
         </div>
+        <p class="errors"></p>
     </div>
 
     <script src="../js/login.js"></script>

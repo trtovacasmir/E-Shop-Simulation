@@ -60,7 +60,7 @@ h2{
 body{
     min-height: calc(100vh - 30vh);
     width: 100%;
-    height: 70vh;
+    height: 125vh;
     background-color: #ecf0f1;
 }
 
@@ -99,6 +99,7 @@ footer{
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
 }
 
 .api_image{
@@ -137,6 +138,7 @@ ul{
 .p{
     color: #658994;
     background-color: white;
+    
 }
 /*      -----    home page    -----       */
 .home_container{
@@ -203,11 +205,11 @@ select option:hover {
 /*--------------------------LOGIN---------------------------------------------*/
 .login_card{
     background-color: white;
-    height: 500px;
+    height: 480px;
     width: 400px;
     position: absolute;
     left: 35%;
-    top: 10%;
+    top: 17%;
     
     border-radius: 10px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
@@ -229,14 +231,12 @@ input{
 .signup{
     font-size: 1rem;
     color: rebeccapurple;
+    padding: 5px;
 }
 
 .login_title{
     color:#2c3e50;
     margin-bottom: 30px;
-}
-@media (max-width:390) {
-    
 }
 
 
@@ -252,16 +252,75 @@ button.login {
     transition: background-color 0.2s ease-in-out;
     width: 13rem;
     border-radius: 5rem;
+    margin-bottom: 10px;
 }
 
-  small{
+small{
+    color: #658994;
+
+}
+  small a{
     
-        color: #658994;
-    
+        padding: 10px 100px;
+        width: 600px;
+        margin-top: 30px;
+        margin-top: 10px;
   }
 
 
   .login_card_child{
-    padding: 40px 110px;
+    padding: 40px 90px;
     margin-top: 50px;
+  }
+
+
+
+/*--------------------------LOGIN---------------------------------------------*/
+/*--------------------------LOGIN---------------------------------------------*/
+/*--------------------------LOGIN---------------------------------------------*/
+
+
+.login_card1{
+    background-color: white;
+    height: 630px;
+    width: 400px;
+    position: absolute;
+    left: 35%;
+    top: 17%;
+    
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.errors{
+    padding: 10px 80px; 
+}
+
+
+  @media screen and (max-width: 480px) {
+    .login_card{
+        height: 550px;
+        width: 350px;
+        position: absolute;
+        right: 0%;
+        left:7.5%;
+        top: 20%;
+    }
+
+    .login_card_child{
+        padding: 30px 70px;
+        margin-top: 50px;
+      }
+
+    .login_card1{
+        height: 610px;
+        width: 350px;
+        position: absolute;
+        right: 0%;
+        left:7.5%;
+        top: 20%;
+    }
+    
   }

@@ -21,11 +21,13 @@ getProducts().then((response) => {
         image.className = 'api_image'
 
         let price = document.createElement('p')
-        price.innerText = `Price: ${element.price}$`
+        price.innerText = `${element.price}$`
         price.className = 'p'
-        
+        price.style.fontSize = '17px'
+        price.style.color = '#36577f'
+        price.style.fontWeight='bold';
 
-        
+
         card.appendChild(name)
         card.appendChild(image)
         card.appendChild(price)

@@ -6,19 +6,26 @@
     <title>Document</title>
    <link rel="stylesheet" href="../style.css">
 </head>
+<header>
+    <div class="logo"><i class="fa-brands fa-shopify" id="logo"></i></div>
+    <div class="nav_home"></div>
+</header> 
 <body>
     
-    <div class="login_div">
-        <h1>Sign In Page</h1>
-        <input type="text" name="" id="name" placeholder=" Enter your Name">
-        <input type="text" name="" id="last" placeholder=" Enter your Last Name">
+    <div class="login_card1">
+        <form action="" onclick="" class="login_card_child">
+            <h1>Sign In Page</h1>
+        <input type="text" name="" id="name" placeholder=" Enter your Name" required minlength="3" maxlength="30">
+        <input type="text" name="" id="last" placeholder=" Enter your Last Name" required minlength="3" maxlength="30">
         <input type="email" name="" id="email" placeholder=" Enter your Email">
-        <input type="text" name="" id="address" placeholder=" Enter your Adrress">
-        <input type="text" name="" id="username" placeholder=" Enter your Username">
-        <input type="password" name="" id="password" placeholder=" Enter your password">
-        <input type="number" name="" id="number" placeholder=" Phone number">
-        <small>Have you an account ? <a href="login.html" class="signup">Log in</a></small>
+        <input type="text" name="" id="address" placeholder=" Enter your Adrress" required minlength="3" maxlength="30">
+        <input type="text" name="" id="username" placeholder=" Enter your Username" required minlength="4" maxlength="30">
+        <input type="password" name="" id="password" placeholder=" Enter your password" required minlength="8" maxlength="30">
+        <input type="number" name="" id="number" placeholder=" Phone number" required minlength="3" maxlength="30">
         <button onclick="Login()" class="login">Sign Up</button>
+        <small>Have you an account ? <a href="login.html" class="signup">Log in</a></small>
+        
+        </form>
 
     </div>
 </body>

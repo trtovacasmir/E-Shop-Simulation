@@ -1,7 +1,9 @@
-//Funkcija koju prosledjujemo buttonu i koja klikom pruzima podatke sa inputa i salje podatke iz ovih polja
+let errors = document.querySelector('.errors')
+try {
+    //Funkcija koju prosledjujemo buttonu i koja klikom pruzima podatke sa inputa i salje podatke iz ovih polja
 function Login() {
    
-
+    errors.innerText = ''
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
@@ -24,10 +26,17 @@ function Login() {
         // setTimeout(function(){ // pričekajte 3 sekunde prije ponovnog učitavanja stranice
         //     window.location.reload(); // ponovo učitajte stranicu nakon prijave kako biste ažurirali prikaz dugmadi
         // }, 3000);
-    })
+    }).catch((error) => {
+        console.error(error)
+        errors.innerText = 'Incorrect username or password !!!'
+        errors.style.color = 'red'
+      })
    
 }
 
+} catch (error) {
+    
+}
 
 function Logout(){
     
