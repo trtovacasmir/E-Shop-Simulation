@@ -27,11 +27,18 @@ getProducts().then((response) => {
         price.style.color = '#36577f'
         price.style.fontWeight='bold';
 
+            card.addEventListener('click',()=> {
+            window.location.href=`detalji.html?id=${element.id}`;
+        })
+
 
         card.appendChild(name)
         card.appendChild(image)
         card.appendChild(price)
         container.appendChild(card)
+
+
+    
     });
 })
 

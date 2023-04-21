@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.api_image{
+    height: 150px;
+    width: 140px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.api_name{
+    margin-top: 10px;
+    color: #bf9fb8;
+    background-color: red;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ead9e6;
+    font-size: 1.3rem;
+}
+
+.api_name p{
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.des{
+    width: 300px;
+    color: #658994;
+}
+
+p{
+    color: #658994;
+    width: 300px;
+}
+
+.div_card{
+   
+    height: 500px;
+    width:400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+    width: 13rem;
+    border-radius: 5rem;
+    margin-bottom: 10px;
+}
