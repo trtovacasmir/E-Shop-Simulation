@@ -25,15 +25,16 @@ getProducts().then((response) => {
         price.className = 'p'
         price.style.fontSize = '17px'
         price.style.color = '#36577f'
-        price.style.fontWeight='bold';
+        price.style.fontWeight='bold'
 
             card.addEventListener('click',()=> {
             window.location.href=`detalji.html?id=${element.id}`;
         })
 
 
-        card.appendChild(name)
+       
         card.appendChild(image)
+        card.appendChild(name)
         card.appendChild(price)
         container.appendChild(card)
 
@@ -95,13 +96,22 @@ let category = document.getElementById("category");
              let price = document.createElement('p')
              price.innerText = `Price: ${element.price}$`
              price.className = 'p'
+             price.style.color = 'blue'
              
-     
+             
+            
              
              card.appendChild(name)
              card.appendChild(image)
              card.appendChild(price)
              container.appendChild(card)
+
+             card.addEventListener('click',()=> {
+            window.location.href=`detalji.html?id=${element.id}`;
+        })
+
+
+
          });
         
     })
