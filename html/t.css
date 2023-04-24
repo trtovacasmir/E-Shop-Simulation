@@ -25,6 +25,8 @@ main{
     justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
+    border-bottom: 1px solid #2C3E50;
+    border-bottom-right-radius: 100px;
 
 }
 .f_left_about{
@@ -42,6 +44,8 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 1px solid #2C3E50;
+    border-bottom-left-radius: 100px;
    
 
 }
@@ -104,6 +108,7 @@ img{
     width: 300px;
     border: 5px solid #2c3e50;
     border-radius: 40%;
+    margin-bottom: 10px;
 }
 
 
